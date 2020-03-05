@@ -1,4 +1,11 @@
-namespace App {
+import { DagerTarget } from '../models/drag-drop.js';
+import { Project, projectStatus } from '../models/project.js';
+import { Autobind } from '../decorators/autobind.js';
+import { Component } from './component-base.js';
+import { projectState } from '../state/project-state.js';
+import { ProjectItem } from './project-item.js';
+
+
   // ProjectList Class
   export class ProjectList extends Component<HTMLDivElement, HTMLElement>
     implements DagerTarget {
@@ -68,4 +75,4 @@ namespace App {
       }
     }
   }
-}
+
